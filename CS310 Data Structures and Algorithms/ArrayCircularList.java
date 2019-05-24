@@ -162,9 +162,9 @@ public class ArrayCircularList<E> {
 
 	public boolean contains(E obj) {
 
-iterateFromFront = front;
+		iterateFromFront = front;
 
-for (int i = 0; i < size; i++) {
+		for (int i = 0; i < size; i++) {
 			if (iterateFromFront == array.length) { // wrap to beginning of array
 				iterateFromFront = 0;
 			}
@@ -218,7 +218,7 @@ for (int i = 0; i < size; i++) {
 		
 		iterateFromFront = front;
 
-return new IteratorHelper();
+		return new IteratorHelper();
 		
 	}
 	
@@ -226,7 +226,7 @@ return new IteratorHelper();
 		
 		private int counter;
 
-@Override
+		@Override
 		public boolean hasNext() {
 		
 			if (counter == size) { // reset for next time Iterator is called
